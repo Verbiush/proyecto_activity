@@ -7,16 +7,31 @@
     tools:context=".ProtectActivity">
 
 
+    <EditText
+        android:id="@+id/cifraDos"
+        android:layout_width="72dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="220dp"
+        android:ems="10"
+        android:background="@drawable/estilo_bordes"
+        android:gravity="center"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/cifraUno"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/visorNumero"
-        android:layout_width="128dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="200dp"
-        android:gravity="center"
+        android:layout_width="105dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="44dp"
         android:background="@drawable/estilo_bordes"
+        android:gravity="center"
         android:text="Visor Numero"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cifraDos"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -32,21 +47,61 @@
 
     <Button
         android:id="@+id/generadorNumero"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="117dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
         android:text="Generador"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/visorResultado"
         app:layout_constraintTop_toBottomOf="@+id/visorNumero" />
 
     <Button
-        android:id="@+id/borrar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="80dp"
+        android:id="@+id/borrardor"
+        android:layout_width="122dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="60dp"
         android:text="Borrar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/visorNumero" />
+        app:layout_constraintStart_toEndOf="@+id/botonResta"
+        app:layout_constraintTop_toBottomOf="@+id/generadorNumero" />
+
+    <TextView
+        android:id="@+id/visorResultado"
+        android:layout_width="134dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/estilo_bordes"
+        android:gravity="center"
+        android:text="Resultado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cifraUno" />
+
+    <Button
+        android:id="@+id/botonResta"
+        android:layout_width="124dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="40dp"
+        android:text="Resta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/visorResultado" />
+
+    <EditText
+        android:id="@+id/cifraUno"
+        android:layout_width="72dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="220dp"
+        android:ems="10"
+        android:inputType="number"
+        android:background="@drawable/estilo_bordes"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
