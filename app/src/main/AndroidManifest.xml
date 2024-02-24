@@ -26,11 +26,11 @@
             android:exported="true">
 
         </activity>
-        <activitydw
+        <activity
             android:name=".EjercicioActivity"
             android:exported="true">
 
-        </activitydw>
+        </activity>
     </application>
 
 </manifest>
