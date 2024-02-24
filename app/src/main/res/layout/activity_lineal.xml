@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".ProtectActivity">
 
+
     <TextView
         android:id="@+id/visorNumero"
         android:layout_width="128dp"

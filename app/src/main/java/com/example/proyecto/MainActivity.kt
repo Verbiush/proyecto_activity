@@ -25,7 +25,6 @@ class MainActivity : AppCompatActivity() {
         operadorListener()
         borrarListener()
 
-
     }
     private fun init (){
         borrar= findViewById<Button>(R.id.borrar)
@@ -56,12 +55,8 @@ class MainActivity : AppCompatActivity() {
             primerNumero?.setText("")
             segundoNumero?.setText("")
             mostrarResultado?.setText("")
-
-
         }
     }
-
-
     private fun funcionButton(){
         button?.setOnClickListener {
             val llamdoVista = Intent(this, ProtectActivity::class.java)
