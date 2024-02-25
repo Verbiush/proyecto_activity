@@ -47,8 +47,7 @@ class MainActivity : AppCompatActivity() {
         return resultadoSuma
     }
     private fun borrarListener(){
-        var borrarCampos = mostrarResultado?.text.toString()
-        mostrarResultado?.setText(borrarCampos.toString())
+
 
         borrar?.setOnClickListener {
 

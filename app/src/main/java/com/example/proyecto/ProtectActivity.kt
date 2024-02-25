@@ -62,12 +62,7 @@ class ProtectActivity: AppCompatActivity() {
         return rnds
     }
     private fun borrarListener(){
-        var borrarCampo = visorNumero?.text.toString()
-        //var clearCampos = visorResultado?.text.toString()
-        visorNumero?.setText(borrarCampo.toString())
-       // clearCampos?.setText(clrearCampos.toString())
-
-
+        
         borrador?.setOnClickListener {
 
             visorNumero?.setText("")
