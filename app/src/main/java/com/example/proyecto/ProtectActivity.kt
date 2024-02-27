@@ -62,7 +62,7 @@ class ProtectActivity: AppCompatActivity() {
         return rnds
     }
     private fun borrarListener(){
-        
+
         borrador?.setOnClickListener {
 
             visorNumero?.setText("")
