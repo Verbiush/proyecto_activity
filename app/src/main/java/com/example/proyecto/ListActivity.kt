@@ -18,6 +18,7 @@ class ListActivity : AppCompatActivity() {
         data.add(Country("Germany","Europa"))
         data.add(Country("Colombia","America"))
 
+
         val adapter = CountryAdapter(data)
         countryListRecycle.adapter = adapter
     }
