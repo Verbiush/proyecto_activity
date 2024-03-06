@@ -3,6 +3,7 @@ package com.example.proyecto
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import com.example.proyecto.model.Country
 
 class CollectionsActivity : AppCompatActivity() {
 
@@ -12,7 +13,15 @@ class CollectionsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_collections)
 
         val countries = listOf("Germany", "India", "Japan", "Brazil", "Australia")
-        printCountries(countries)
+        val printIndex= searchCountry(countries,"España")
+        Log.d("busqueda",printIndex.toString())
+        val country = Country("Colombia","America")
+        val grecia = Country("Grecia","europa")
+        val countriesClass = listOf(country,grecia)
+        for(tempCountry in countriesClass){
+            Log.d("addCountry",tempCountry.countryInformation())
+        }
+
 
 
         val cities = mutableListOf("Berlin", "Calcutta", "Seoul", "Sao Paulo", "Sydney")
@@ -50,17 +59,15 @@ class CollectionsActivity : AppCompatActivity() {
         }
     }
 
-    private fun printCountries(list: List<String>) {
+    private fun searchCountry(list: List<String>, searchCountry:String) :Int {
 
         for (index in 0 until list.size) {
             var countryTemp = list[index]
-            if (countryTemp=="Japan"){
-                Log.d("busqueda",index.toString())
+            if (countryTemp==searchCountry){
+               return index
             }
-            Log.d("country", countryTemp)
-            Log.e("country", countryTemp)
-
         }
+        return -1
     }
     private fun printPerson(hashMap: HashMap<Int, String>) {
         hashMap.forEach { item ->
@@ -68,6 +75,8 @@ class CollectionsActivity : AppCompatActivity() {
             var value = item.value
             Log.d("key valido", key.toString() + "--" + value)
         }
+
+
     }
 
 }
