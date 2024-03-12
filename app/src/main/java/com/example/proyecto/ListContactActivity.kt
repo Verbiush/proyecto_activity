@@ -19,7 +19,7 @@ class ListContactActivity: AppCompatActivity(), OnContactClickListener {
           val data = ArrayList<Contact>()
 
         data.add(Contact("Luis","7:40pm","Hi"))
-        data.add(Contact("Felipe","8:50pm","go?"))
+        data.add(Contact("Agudelo","8:50pm","go?"))
 
     val adapter = ContactAdapter(data)
     contactListRecycle.adapter = adapter
