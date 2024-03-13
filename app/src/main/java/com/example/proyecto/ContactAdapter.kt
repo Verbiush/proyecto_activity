@@ -28,6 +28,7 @@ class ContactAdapter(private val contactList: List<Contact>) :
         holder.chatTime.text=contact.contactTime
         holder.userName.text=contact.contactName
         holder.chatPreview.text=contact.previewChatContact
+
         holder.itemContactContainer.setOnClickListener {
         }
         holder.itemView.setOnClickListener {

@@ -22,7 +22,7 @@ class ListContactActivity: AppCompatActivity(), OnContactClickListener {
         data.add(Contact("Luis","7:40p.m","Hi"))
         data.add(Contact("Agudelo","8:50p.m","go?"))
         data.add(Contact("Angela Cano","2:50p.m","hello world"))
-        data.add(Contact("Programación Android","2:50p.m","solo se implementa en el layout en la parte de la imagen con"))
+        data.add(Contact("Programación Android","2:50p.m","solo se implementa en el layout en la parte de la imagen con hola hola hola"))
 
 
     val adapter = ContactAdapter(data)
