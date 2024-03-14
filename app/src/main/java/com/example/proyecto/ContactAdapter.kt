@@ -9,6 +9,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.proyecto.adapter_interface.OnContactClickListener
 import com.example.proyecto.model.Contact
+import com.squareup.picasso.Picasso
 
 
 class ContactAdapter(private val contactList: List<Contact>) :
@@ -28,6 +29,14 @@ class ContactAdapter(private val contactList: List<Contact>) :
         holder.chatTime.text=contact.contactTime
         holder.userName.text=contact.contactName
         holder.chatPreview.text=contact.previewChatContact
+
+        if (contact.imageContact.isNotEmpty()){
+            Picasso.with(holder.itemView.context)
+                .load(contact.imageContact).into(holder.profileImage)
+        }else{
+            Picasso.with(holder.itemView.context)
+                .load("https://cdn.pixabay.com/photo/2017/11/10/05/48/user-2935527_640.png").into(holder.profileImage)
+        }
 
         holder.itemContactContainer.setOnClickListener {
         }

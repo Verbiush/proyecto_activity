@@ -10,7 +10,7 @@ abstract class Car(val doorNumber: Int) {
     }
 
     open fun openDoors() {
-        Log.d(type,"abri" + doorNumber + "puertas")
+        Log.d(type,"abri" +" "+ doorNumber +" "+ "puertas")
     }
 
     abstract fun acelerar()

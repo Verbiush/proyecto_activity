@@ -19,8 +19,8 @@ class ListContactActivity: AppCompatActivity(), OnContactClickListener {
           val data = ArrayList<Contact>()
 
 
-        data.add(Contact("Luis","7:40p.m","Hi"))
-        data.add(Contact("Agudelo","8:50p.m","go?"))
+        data.add(Contact("Luis","7:40p.m","Hi","https://img.wattpad.com/cover/121162425-288-k20801.jpg"))
+        data.add(Contact("Agudelo","8:50p.m","go?","https://elcomercio.pe/resizer/AB93Kg1JoITGLMLkCgLBnVzg_7g=/980x528/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/37OWRM2CLBAE7BP5SXKLVMNHZE.jpg"))
         data.add(Contact("Angela Cano","2:50p.m","hello world"))
         data.add(Contact("Programación Android","2:50p.m","solo se implementa en el layout en la parte de la imagen con hola hola hola"))
 
